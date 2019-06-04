@@ -10,7 +10,7 @@
 [ext_resource path="res://Tiro.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=11]
+[ext_resource path="res://Timer.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=12]
 
 [node name="Cena1" type="Node2D"]
@@ -65,10 +65,7 @@ scale = Vector2( 4, 4 )
 position = Vector2( 532.148, 327.414 )
 scale = Vector2( 2, 2 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-volume_db = 3.028
-autoplay = true
+[node name="CanvasLayer" parent="Tiro" instance=ExtResource( 11 )]
 
 [node name="Limites" parent="." instance=ExtResource( 12 )]
 

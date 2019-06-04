@@ -1,47 +1,48 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Loading.gd" type="Script" id=1]
 [ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Pedestre.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Pedestre5.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Pedestre4.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Inimigo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Inimigo2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy1.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy2.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy3.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy4.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy5.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy6.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy7.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy8.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy9.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy10.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy11.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy12.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy13.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy14.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy15.png" type="Texture" id=22]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy16.png" type="Texture" id=23]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy17.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy18.png" type="Texture" id=25]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/0.png" type="Texture" id=26]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/1.png" type="Texture" id=27]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/2.png" type="Texture" id=28]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/3.png" type="Texture" id=29]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/4.png" type="Texture" id=30]
-[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/5.png" type="Texture" id=31]
-[ext_resource path="res://Sprites/imagens jogo/homer/0.png" type="Texture" id=32]
-[ext_resource path="res://Sprites/imagens jogo/homer/1.png" type="Texture" id=33]
-[ext_resource path="res://Sprites/imagens jogo/homer/2.png" type="Texture" id=34]
-[ext_resource path="res://Sprites/imagens jogo/homer/3.png" type="Texture" id=35]
-[ext_resource path="res://Sprites/imagens jogo/homer/4.png" type="Texture" id=36]
-[ext_resource path="res://Sprites/imagens jogo/homer/5.png" type="Texture" id=37]
-[ext_resource path="res://Sprites/imagens jogo/homer/6.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/imagens jogo/homer/7.png" type="Texture" id=39]
-[ext_resource path="res://Sprites/imagens jogo/homer/8.png" type="Texture" id=40]
-[ext_resource path="res://Sprites/imagens jogo/homer/9.png" type="Texture" id=41]
-[ext_resource path="res://Inimigo4.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Inimigo2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy4.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy5.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy6.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy7.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy8.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy9.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy10.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy11.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy12.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy13.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy14.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy15.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy16.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy17.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/imagens jogo/Dancarino/giphy18.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/0.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/1.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/2.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/3.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/4.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/imagens jogo/IshCorrendo/5.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/imagens jogo/homer/0.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/imagens jogo/homer/1.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/imagens jogo/homer/2.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/imagens jogo/homer/3.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/imagens jogo/homer/4.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/imagens jogo/homer/5.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/imagens jogo/homer/6.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/imagens jogo/homer/7.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/imagens jogo/homer/8.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/imagens jogo/homer/9.png" type="Texture" id=40]
+[ext_resource path="res://Inimigo4.tscn" type="PackedScene" id=41]
+[ext_resource path="res://Inimigo5.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Sprites/imagens jogo/homem-bomba.png" type="Texture" id=43]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -51,7 +52,7 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "default",
 "speed": 12.0
@@ -59,7 +60,7 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
 "loop": true,
 "name": "New Anim",
 "speed": 10.0
@@ -67,7 +68,7 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
@@ -85,8 +86,10 @@ margin_bottom = 692.659
 custom_styles/panel = SubResource( 1 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Panel"]
-margin_right = 481.0
-margin_bottom = 98.0
+margin_left = 23.2949
+margin_top = 13.977
+margin_right = 504.295
+margin_bottom = 111.977
 custom_fonts/font = SubResource( 2 )
 text = "Kill"
 align = 1
@@ -98,6 +101,15 @@ margin_right = 1012.18
 margin_bottom = 708.328
 custom_fonts/font = SubResource( 2 )
 text = "Press Space to Continue"
+align = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/Panel"]
+margin_left = 293.516
+margin_top = 548.868
+margin_right = 1007.52
+margin_bottom = 646.868
+custom_fonts/font = SubResource( 2 )
+text = "You have 10 seconds"
 align = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer/Panel"]
@@ -113,26 +125,22 @@ position = Vector2( 1079.91, 180.424 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Inimigo6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1116.18, 520.744 )
+position = Vector2( 1084.72, 494.835 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Inimigo7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 915.333, 554.218 )
+position = Vector2( 891.275, 509.803 )
 scale = Vector2( 0.9, 0.9 )
 
-[node name="Inimigo" parent="." instance=ExtResource( 6 )]
-position = Vector2( 117.535, 459.375 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Inimigo2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 306.36, 171.018 )
+[node name="Inimigo2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 404.199, 184.995 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 position = Vector2( 887.063, 192.476 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 3 )
-frame = 14
+frame = 7
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -146,10 +154,19 @@ playing = true
 position = Vector2( 1029.33, 368.215 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 5 )
-frame = 4
+frame = 8
 playing = true
 
-[node name="Inimigo4" parent="." instance=ExtResource( 42 )]
-position = Vector2( 115.938, 214.918 )
+[node name="Inimigo4" parent="." instance=ExtResource( 41 )]
+position = Vector2( 143.892, 214.918 )
 scale = Vector2( 0.7, 0.7 )
+
+[node name="Inimigo5" parent="." instance=ExtResource( 42 )]
+position = Vector2( 348.881, 433.889 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="homem-bomba" type="Sprite" parent="."]
+position = Vector2( 134.568, 457.184 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 43 )
 

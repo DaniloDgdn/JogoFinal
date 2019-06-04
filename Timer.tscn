@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Label.gd" type="Script" id=2]
+[ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+outline_color = Color( 0.85098, 0.141176, 0.141176, 1 )
+font_data = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 88.8796
+margin_top = 49.2922
+margin_right = 798.88
+margin_bottom = 114.292
+custom_styles/panel = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = -86.5472
+margin_top = 8.0
+margin_right = 689.453
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 2 )
+text = "0.0000"
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Panel"]
+stream = ExtResource( 3 )
+volume_db = 3.028
+autoplay = true
+

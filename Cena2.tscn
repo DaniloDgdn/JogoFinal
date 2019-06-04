@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Sprites/Fundo Tela4.jpg" type="Texture" id=1]
 [ext_resource path="res://Pedestre.tscn" type="PackedScene" id=2]
@@ -9,7 +9,8 @@
 [ext_resource path="res://Tiro.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Limites.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Timer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Limites.tscn" type="PackedScene" id=11]
 
 [node name="Cena2" type="Node2D"]
 __meta__ = {
@@ -55,7 +56,9 @@ limit_bottom = 608
 position = Vector2( 596.898, 445.568 )
 scale = Vector2( 1.68891, 1.68891 )
 
-[node name="Limites" parent="." instance=ExtResource( 10 )]
+[node name="CanvasLayer" parent="Tiro" instance=ExtResource( 10 )]
+
+[node name="Limites" parent="." instance=ExtResource( 11 )]
 position = Vector2( 31.5794, -56.2667 )
 scale = Vector2( 1.05, 1 )
 
