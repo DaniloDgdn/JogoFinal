@@ -1,0 +1,9 @@
+[gd_resource type="StyleBoxFlat" format=2]
+
+[resource]
+bg_color = Color( 0, 0, 0, 1 )
+draw_center = false
+border_color = Color( 0.435294, 0.435294, 0.435294, 1 )
+border_blend = true
+corner_detail = 16
+

@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://menu.jpg" type="Texture" id=1]
+[ext_resource path="res://menu.gd" type="Script" id=2]
+[ext_resource path="res://new_styleboxflat.tres" type="StyleBox" id=3]
+[ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 4 )
+
+[node name="menu" type="Sprite"]
+position = Vector2( 730.937, 411.772 )
+scale = Vector2( 0.758243, 0.758997 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = -887.37
+margin_top = -478.91
+margin_right = -175.37
+margin_bottom = -321.91
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.592157, 0.160784, 0.160784, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.8, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+text = "Jogar"
+flat = true
+
+[node name="Button2" type="Button" parent="."]
+margin_left = -887.37
+margin_top = -302.591
+margin_right = -175.37
+margin_bottom = -145.591
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.592157, 0.160784, 0.160784, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.8, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+text = "Sair"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

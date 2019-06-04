@@ -1,6 +1,6 @@
 extends Label
 
-var tempo = 10
+var tempo = 5
 func _ready():
 	set_process(true)
 	

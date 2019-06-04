@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Jogo Final"
-run/main_scene="res://Loading.tscn"
+run/main_scene="res://Menu.tscn"
 boot_splash/fullsize=false
 config/icon="res://icon.png"
 

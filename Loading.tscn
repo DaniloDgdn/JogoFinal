@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://Loading.gd" type="Script" id=1]
 [ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://Inimigo4.tscn" type="PackedScene" id=41]
 [ext_resource path="res://Inimigo5.tscn" type="PackedScene" id=42]
 [ext_resource path="res://Sprites/imagens jogo/homem-bomba.png" type="Texture" id=43]
+[ext_resource path="res://Tutorial.png" type="Texture" id=44]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -91,33 +92,47 @@ margin_top = 13.977
 margin_right = 504.295
 margin_bottom = 111.977
 custom_fonts/font = SubResource( 2 )
-text = "Kill"
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Matar  >)"
 align = 1
 
 [node name="Label3" type="Label" parent="CanvasLayer/Panel"]
 margin_left = 298.175
-margin_top = 610.328
-margin_right = 1012.18
-margin_bottom = 708.328
+margin_top = 616.201
+margin_right = 1122.18
+margin_bottom = 714.201
 custom_fonts/font = SubResource( 2 )
-text = "Press Space to Continue"
+custom_colors/font_color = Color( 0.819608, 0.0980392, 0.0980392, 1 )
+text = "Aperte espaço pra começar"
 align = 1
 
 [node name="Label4" type="Label" parent="CanvasLayer/Panel"]
-margin_left = 293.516
-margin_top = 548.868
-margin_right = 1007.52
-margin_bottom = 646.868
+margin_left = 318.509
+margin_top = 551.14
+margin_right = 1032.51
+margin_bottom = 649.14
 custom_fonts/font = SubResource( 2 )
-text = "You have 10 seconds"
+text = "Você tem 10 segundos"
 align = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer/Panel"]
 margin_left = 725.271
+margin_top = 20.5543
 margin_right = 1206.27
-margin_bottom = 98.0
+margin_bottom = 118.554
 custom_fonts/font = SubResource( 2 )
-text = "Save"
+custom_colors/font_color = Color( 0.113725, 1, 0.0117647, 1 )
+text = "Salvar  :p"
+align = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer/Panel"]
+margin_left = 408.148
+margin_top = 117.453
+margin_right = 889.147
+margin_bottom = 215.453
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Controles"
 align = 1
 
 [node name="Inimigo3" parent="." instance=ExtResource( 3 )]
@@ -140,7 +155,7 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 887.063, 192.476 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 3 )
-frame = 14
+frame = 5
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -148,14 +163,14 @@ position = Vector2( 895.431, 376.583 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 4 )
 animation = "New Anim"
-frame = 3
+frame = 5
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 1029.33, 368.215 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 5 )
-frame = 9
+frame = 7
 playing = true
 
 [node name="Inimigo4" parent="." instance=ExtResource( 41 )]
@@ -170,4 +185,9 @@ scale = Vector2( 0.6, 0.6 )
 position = Vector2( 134.568, 457.184 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 43 )
+
+[node name="Tutorial" type="Sprite" parent="."]
+position = Vector2( 646.423, 254.201 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 44 )
 
