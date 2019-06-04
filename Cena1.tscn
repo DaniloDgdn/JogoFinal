@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Cena1.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/FundoTela1.jpg" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Musicas/Spirit-In-The-Sky-Norman-Greenbaum.wav" type="AudioStream" id=13]
 
 [node name="Cena1" type="Node2D"]
 position = Vector2( 6.18176, -15.4543 )
@@ -68,4 +69,8 @@ scale = Vector2( 2, 2 )
 [node name="CanvasLayer" parent="Tiro" instance=ExtResource( 11 )]
 
 [node name="Limites" parent="." instance=ExtResource( 12 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+autoplay = true
 

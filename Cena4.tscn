@@ -9,7 +9,7 @@
 [ext_resource path="res://Tiro.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=10]
+[ext_resource path="res://Musicas/Go-All-The-Way.wav" type="AudioStream" id=10]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=12]
 

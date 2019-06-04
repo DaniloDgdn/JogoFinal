@@ -24,7 +24,7 @@ position = Vector2( -664.285, -421.62 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Tiro" parent="." instance=ExtResource( 2 )]
-position = Vector2( 701.541, 362.412 )
+position = Vector2( 383.036, 444.607 )
 
 [node name="Camera2D" parent="Tiro" instance=ExtResource( 3 )]
 position = Vector2( 74.8201, -46.8193 )

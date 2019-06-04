@@ -9,12 +9,13 @@
 [ext_resource path="res://Tiro.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=10]
+[ext_resource path="res://Musicas/Smooth-Criminal.wav" type="AudioStream" id=10]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=13]
 
 [sub_resource type="DynamicFont" id=1]
+size = 27
 font_data = ExtResource( 13 )
 
 [node name="Cena3" type="Node2D"]
@@ -82,10 +83,10 @@ scale = Vector2( 1.23, 1.6 )
 [node name="CanvasLayer" parent="." instance=ExtResource( 12 )]
 
 [node name="Label" type="Label" parent="."]
-margin_left = -706.022
-margin_top = -58.7749
-margin_right = -524.022
-margin_bottom = -2.7749
+margin_left = -728.521
+margin_top = 136.507
+margin_right = -425.521
+margin_bottom = 225.507
 custom_fonts/font = SubResource( 1 )
 text = "O bin laden é Fake"
 

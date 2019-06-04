@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Spirit-In-The-Sky-Norman-Greenbaum.wav-eccaa92417e4c68b25a4355c0c890327.sample"
+
+[deps]
+
+source_file="res://Musicas/Spirit-In-The-Sky-Norman-Greenbaum.wav"
+dest_files=[ "res://.import/Spirit-In-The-Sky-Norman-Greenbaum.wav-eccaa92417e4c68b25a4355c0c890327.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
