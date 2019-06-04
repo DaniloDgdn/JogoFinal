@@ -18,7 +18,8 @@ func _physics_process(delta):
 		if body.name == "Tiro":
 			if Input.is_action_pressed('Shoot'):
 				$".".queue_free()
-				get_tree().change_scene("CenaFakeBoss.tscn")
+				get_tree().change_scene("GameOver.tscn")
+			
 		
 func _ready():
 	add_to_group("Inimigos")
@@ -34,5 +35,3 @@ func _process(delta):
 		motion.y = MAX_GRAVITY
 		
 		
-
-			

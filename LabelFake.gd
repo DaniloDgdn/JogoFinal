@@ -11,5 +11,4 @@ func _process(delta):
 		if tempo > 0:
 			$".".set_text("Timer: "+str(tempo))
 		else:
-			get_tree().change_scene("GameOver.tscn")
-
+			get_tree().change_scene("GameOverFakeBoss.tscn")
