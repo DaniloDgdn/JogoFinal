@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Sprites/FundoTela8.jpg" type="Texture" id=1]
 [ext_resource path="res://Pedestre5.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=10]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Timer.tscn" type="PackedScene" id=12]
 
 [node name="Cena3" type="Node2D"]
 position = Vector2( 6.18176, -15.4543 )
@@ -73,4 +74,6 @@ autoplay = true
 [node name="Limites" parent="." instance=ExtResource( 11 )]
 position = Vector2( -420.684, -162.307 )
 scale = Vector2( 1.23, 1.6 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 12 )]
 
