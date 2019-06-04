@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ImagemBoss.jpeg" type="Texture" id=1]
+[ext_resource path="res://Tiro.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Smooth-Criminal.wav" type="AudioStream" id=5]
+[ext_resource path="res://Boss.png" type="Texture" id=6]
+
+[node name="Cena3" type="Node2D"]
+position = Vector2( 6.18176, -15.4543 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 595.984, 650.542 ],
+"_edit_vertical_guides_": [ 1165.35 ]
+}
+
+[node name="FundoTela1" type="Sprite" parent="."]
+position = Vector2( 327.4, 374.163 )
+scale = Vector2( 0.541853, 0.432852 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 308, 500, 258, 172 )
+
+[node name="Inimigos" type="Node2D" parent="."]
+position = Vector2( -664.285, -421.62 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Tiro" parent="." instance=ExtResource( 2 )]
+position = Vector2( 701.541, 362.412 )
+
+[node name="Camera2D" parent="Tiro" instance=ExtResource( 3 )]
+position = Vector2( 74.8201, -46.8193 )
+scale = Vector2( 4, 4 )
+zoom = Vector2( 0.87, 0.87 )
+limit_left = -640
+limit_top = -200
+limit_right = 1300
+limit_bottom = 800
+
+[node name="Player" parent="Tiro" instance=ExtResource( 4 )]
+position = Vector2( 575.198, 442.213 )
+scale = Vector2( 2, 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 3.028
+autoplay = true
+
+[node name="Boss" type="Sprite" parent="."]
+position = Vector2( 245.512, 376.962 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 6 )
+

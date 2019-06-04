@@ -1,0 +1,31 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Sprites/GameOver/GameOver_0000_Camada-7.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/GameOver/GameOver_0001_Camada-6.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/GameOver/GameOver_0002_Camada-5.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/GameOver/GameOver_0003_Camada-4.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/GameOver/GameOver_0004_Camada-3.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/GameOver/GameOver_0005_Camada-2.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/GameOver/GameOver_0006_Camada-1.png" type="Texture" id=7]
+[ext_resource path="res://TV chiando[1] (online-audio-converter.com).wav" type="AudioStream" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="GameOver" type="Node"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 692.618, 379.383 )
+scale = Vector2( 2.85585, 2.40055 )
+frames = SubResource( 1 )
+frame = 5
+playing = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true

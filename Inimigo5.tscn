@@ -1,0 +1,31 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://InimigoSapo.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0000_Camada-8.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0001_Camada-7.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0002_Camada-6.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0003_Camada-5.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0004_Camada-4.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0005_Camada-3.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0006_Camada-2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/imagens jogo/SapoDoido/giphy_0007_Camada-1.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Inimigo" type="Node2D"]
+
+[node name="Inimigo" type="Area2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Inimigo"]
+frames = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Inimigo"]
+polygon = PoolVector2Array( 32.0323, 147.285, 198.588, 158.389, 181.932, 34.3977, 154.173, 6.6384, 152.322, -135.859, 72.7459, -161.768, 32.0323, -122.905, 13.5261, -30.374, 44.9866, 26.9952, -49.3949, 2.93716, -106.764, 32.5471, -60.4986, 73.2607, 41.2854, 82.5137 )
+

@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Pedestres.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/imagens jogo/mendigo/0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/imagens jogo/mendigo/1.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/imagens jogo/mendigo/2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/imagens jogo/mendigo/3.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/imagens jogo/mendigo/4.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 75.4286
+height = 168.798
+
+[node name="Inimigo" type="Node2D"]
+
+[node name="Inimigo" type="Area2D" parent="."]
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Inimigo"]
+position = Vector2( -8.62756, -1.61766 )
+scale = Vector2( 0.948645, 1.00963 )
+frames = SubResource( 1 )
+animation = "New Anim"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo"]
+position = Vector2( 6.02936, 10.5514 )
+shape = SubResource( 2 )
+

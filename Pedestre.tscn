@@ -1,0 +1,40 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Pedestres.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/3.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/4.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/5.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/6.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/7.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/8.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/imagens jogo/Blanca/9.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 13.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 79.0251
+height = 186.924
+
+[node name="Inimigo" type="Node2D"]
+
+[node name="Inimigo" type="Area2D" parent="."]
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Inimigo"]
+frames = SubResource( 1 )
+animation = "New Anim"
+frame = 7
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo"]
+position = Vector2( -7.86936, 33.716 )
+shape = SubResource( 2 )
+

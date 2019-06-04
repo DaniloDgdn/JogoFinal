@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Inimigo.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/imagens jogo/homem-bomba.png" type="Texture" id=2]
+
+[node name="Inimigo" type="Node2D"]
+
+[node name="Inimigo" type="Area2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Inimigo"]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Inimigo"]
+polygon = PoolVector2Array( -38, 175, 8, 176, 8, 129, 30, 142, 31, 170, 78, 177, 48, 149, 53, 92, 62, -1, 140, -1, 148, -35, 124, -22, 54, -20, 56, -76, 54, -112.477, 45, -134.477, 11, -155.477, -25, -139.477, -34, -118.477, -34, -92.4772, -28, -59.4772, -19, -47.4772, -24, -29.4772, -24, -8.47716, -29, -18.4772, -115, -15.4772, -130, -31.4772, -142, -31.4772, -149, -14.4772, -140, -8.47716, -138, 3.52284, -117, 7.52284, -104, 0.522842, -36, 1.52284, -24, 50.5228, -26, 92.5228, -11, 132.523, -12, 156.925, -26, 157.925 )
+

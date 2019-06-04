@@ -1,0 +1,37 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Arma/arma6.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Arma/arma7.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Arma/arma2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Arma/arma3.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Arma/arma4.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Arma/arma5.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Arma/arma8.png" type="Texture" id=8]
+[ext_resource path="res://SOM-Tiro.wav" type="AudioStream" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Descanso",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Tiro",
+"speed": 12.0
+} ]
+
+[node name="Player" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Descanso"
+playing = true
+
+[node name="Som_Tiro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
