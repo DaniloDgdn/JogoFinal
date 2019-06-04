@@ -3,16 +3,7 @@ extends KinematicBody2D
 var speed = 400
 
 var velocity = Vector2()
-
-
-
-func _input(event):
-   # Mouse in viewport coordinates  
-	if event is InputEventMouseMotion:
-       print("Mouse Motion at: ", event.position, get_viewport().get_mouse_position())
-   
-
-    
+  
 func _physics_process(delta):
 	
 	
@@ -33,3 +24,5 @@ func _physics_process(delta):
 func _process(delta):
 	
 	pass
+
+
