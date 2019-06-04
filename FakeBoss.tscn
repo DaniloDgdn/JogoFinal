@@ -32,8 +32,9 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 12.3126
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 100.47
+height = 359.42
 
 [node name="Inimigo" type="Node2D"]
 
@@ -44,10 +45,10 @@ script = ExtResource( 1 )
 position = Vector2( 509.043, 223.67 )
 scale = Vector2( 2.11859, 2.11859 )
 frames = SubResource( 1 )
-frame = 38
+frame = 10
 playing = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Inimigo"]
-position = Vector2( 532.788, 350.738 )
+position = Vector2( 507.401, 284.098 )
 shape = SubResource( 2 )
 

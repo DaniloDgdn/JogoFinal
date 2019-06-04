@@ -19,6 +19,7 @@ func _physics_process(delta):
 			if Input.is_action_pressed('Shoot'):
 				$".".queue_free()
 				get_tree().change_scene("GameOver.tscn")
+				
 			
 		
 func _ready():

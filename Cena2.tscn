@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Musicas/Hooked-on-a-Feeling.wav" type="AudioStream" id=1]
 [ext_resource path="res://Sprites/Fundo Tela4.jpg" type="Texture" id=2]
@@ -12,12 +12,6 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Limites.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=13]
-
-[sub_resource type="DynamicFont" id=1]
-size = 18
-outline_color = Color( 0.796078, 0.796078, 0.796078, 1 )
-font_data = ExtResource( 13 )
 
 [node name="Cena2" type="Node2D"]
 __meta__ = {
@@ -72,13 +66,4 @@ scale = Vector2( 1.68891, 1.68891 )
 [node name="Limites" parent="." instance=ExtResource( 12 )]
 position = Vector2( 31.5794, -56.2667 )
 scale = Vector2( 1.05, 1 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 1163.16
-margin_top = 12.8787
-margin_right = 1356.16
-margin_bottom = 35.8787
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.776471, 0.776471, 0.776471, 1 )
-text = "Fake é no Umbigo"
 

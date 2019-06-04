@@ -12,7 +12,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 56.7501
+radius = 28.046
 
 [node name="Tiro" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
