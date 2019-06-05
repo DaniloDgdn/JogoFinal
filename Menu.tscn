@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://menu.jpg" type="Texture" id=1]
 [ext_resource path="res://menu.gd" type="Script" id=2]
 [ext_resource path="res://new_styleboxflat.tres" type="StyleBox" id=3]
 [ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Musicas/mENU.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -48,6 +49,10 @@ custom_colors/font_color_hover = Color( 0.8, 0.0823529, 0.0823529, 1 )
 custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
 text = "Sair"
 flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

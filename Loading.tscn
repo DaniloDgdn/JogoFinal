@@ -97,20 +97,20 @@ text = "Matar  >)"
 align = 1
 
 [node name="Label3" type="Label" parent="CanvasLayer/Panel"]
-margin_left = 298.175
-margin_top = 616.201
-margin_right = 1122.18
-margin_bottom = 714.201
+margin_left = 280.557
+margin_top = 651.437
+margin_right = 1104.56
+margin_bottom = 749.437
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.819608, 0.0980392, 0.0980392, 1 )
 text = "Aperte espaço pra começar"
 align = 1
 
 [node name="Label4" type="Label" parent="CanvasLayer/Panel"]
-margin_left = 318.509
-margin_top = 551.14
-margin_right = 1032.51
-margin_bottom = 649.14
+margin_left = 300.891
+margin_top = 586.376
+margin_right = 1014.89
+margin_bottom = 684.376
 custom_fonts/font = SubResource( 2 )
 text = "Você tem 10 segundos"
 align = 1
@@ -155,7 +155,7 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 887.063, 192.476 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 3 )
-frame = 12
+frame = 16
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -163,14 +163,14 @@ position = Vector2( 895.431, 376.583 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 4 )
 animation = "New Anim"
-frame = 2
+frame = 3
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 1029.33, 368.215 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 5 )
-frame = 8
+frame = 7
 playing = true
 
 [node name="Inimigo4" parent="." instance=ExtResource( 41 )]

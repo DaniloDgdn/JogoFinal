@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MusicaFinal.wav-7e1ae38f0d9172385873282eef04a678.sample"
+
+[deps]
+
+source_file="res://Musicas/MusicaFinal.wav"
+dest_files=[ "res://.import/MusicaFinal.wav-7e1ae38f0d9172385873282eef04a678.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

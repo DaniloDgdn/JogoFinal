@@ -4,10 +4,10 @@
 [ext_resource path="res://Sprites/imagens jogo/Boss.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 12.3126
+radius = 38.1948
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 23.4148
+radius = 37.6211
 
 [node name="Inimigo" type="Node2D"]
 
@@ -19,10 +19,10 @@ position = Vector2( 526.107, 646.361 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Inimigo"]
-position = Vector2( 577.883, 170.358 )
+position = Vector2( 549.315, 134.988 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo"]
-position = Vector2( 327.356, 320.675 )
+position = Vector2( 330.077, 331.558 )
 shape = SubResource( 2 )
 

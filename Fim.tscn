@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fontes/nokiafc22.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Musicas/MusicaFinal.wav" type="AudioStream" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 185.68
+margin_top = 212.455
+margin_right = 1212.68
+margin_bottom = 813.455
+custom_fonts/font = SubResource( 1 )
+text = "Parabéns por finalizar o jogo!!!"
+align = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 185.68
+margin_top = 304.482
+margin_right = 1212.68
+margin_bottom = 905.482
+custom_fonts/font = SubResource( 1 )
+text = "AUTORES
+
+DANILO GONÇAVES
+DOUGLAS SOUSA
+JONATHAS OLIVEIRA
+JOÃO GABRIEL
+LUIS HENRIQUE
+MARCELO SIMIÃO"
+align = 1
+

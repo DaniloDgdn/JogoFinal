@@ -18,7 +18,7 @@ func _physics_process(delta):
 		if body.name == "Tiro":
 			if Input.is_action_pressed('Shoot'):
 				$".".queue_free()
-				get_tree().change_scene("res://GameOverFakeBoss.tscn")
+				get_tree().change_scene("res://CenaBoss.tscn")
 			
 		
 func _ready():

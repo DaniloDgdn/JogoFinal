@@ -3,7 +3,7 @@ extends Area2D
 var flip = true
 var posicao_inicial 
 var posicao_final
-var velocidade = 4
+var velocidade = 35
 const GRAVITY = 50
 const MAX_GRAVITY = 700
 var motion = Vector2()
@@ -18,14 +18,14 @@ func _physics_process(delta):
 		if body.name == "Tiro":
 			if Input.is_action_pressed('Shoot'):
 				$".".queue_free()
-				get_tree().change_scene("GameOver.tscn")
+				get_tree().change_scene("res://Fim.tscn")
 				
 			
 		
 func _ready():
 	add_to_group("Inimigos")
 	posicao_inicial = $".".position.x
-	posicao_final = posicao_inicial + 400
+	posicao_final = posicao_inicial + 2800
 	
 	
 func _process(delta):
@@ -34,5 +34,20 @@ func _process(delta):
 	
 	if motion.y >= MAX_GRAVITY:
 		motion.y = MAX_GRAVITY
+		
+		
+	if($".".position.x <= posicao_final and flip):
+		$".".position.x += velocidade
+		$Sprite.flip_h = false
+		if ($".".position.x >= posicao_final):
+			flip = false
+
+
+	if($".".position.x >= posicao_inicial and !flip):
+		$".".position.x -= velocidade
+		$Sprite.flip_h = true
+		if ($".".position.x <= posicao_inicial):
+			flip = true
+			
 		
 		
